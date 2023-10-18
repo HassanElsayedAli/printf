@@ -17,6 +17,10 @@ int _print_format(char space, va_list ptr)
 	{
 		x += _print_str(va_arg(ptr, char *));
 	}
+	else if (space == 'i' || space == 'd')
+	{
+		x = _print_i_d(va_arg(ptr, int), 10);
+	}
 	else
 	{
 	    x += _print_char(space);
