@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
+int _print_i_d(int z, int water);
 int _printf(const char *format, ...);
 int _print_char(int c);
 int _print_str(char *str);
